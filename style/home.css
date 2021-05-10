@@ -2,5 +2,5 @@
  * Specific styling for the home page.
  * 
  */
-@import 'main.css';
+@import url(main.css);
 

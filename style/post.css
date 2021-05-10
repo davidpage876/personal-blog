@@ -2,4 +2,4 @@
  * Specific styling for blog posts.
  * 
  */
-@import 'main.css';
+@import url(main.css);
