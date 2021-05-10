@@ -4,14 +4,97 @@
     <meta charset="utf-8">
     <title>Dave's Blog</title>
 
+    <!-- Google Material Font Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="style/home.css">
 </head>
-<body>
-    <main>
-        <h1>Personal Blog Home</h1>
-        <a href="post/first-blog-post.html">First Blog Post</a>
-    </main>
-    <footer>
+<body class="home">
+    <header class="site-header">
+
+        <nav class="primary-nav">
+            <div class="nav-bar nav-bar--subtle-popout">
+                <div class="nav-bar__site-info">
+                    <img class="nav-bar__logo" src="img/profile-img.jpg" alt="logo">
+                    <p class="site-title">Dave's Blog</p>
+                </div>
+                <ul class="header-menu menu">
+                    <li class="menu-item"><a href="index.html" class="menu-item__link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item__link">Life</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item__link">Nature</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item__link">Code</a></li>
+                    <li class="menu-item menu-item--search">
+                        <button class="search-btn">
+                            <span class="search-btn__icon material-icons-outlined">search</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-title header-title--home">
+            <h1>Dave's Blog</h1>
+            <p>A personal blog on nature, life & code</p>
+        </div>
+    </header>
+
+    <div class="wrap">
+
+        <div class="filters">
+            <button class="btn btn--selected">All</button>
+            <button class="btn">Life</button>
+            <button class="btn">Nature</button>
+            <button class="btn">Code</button>
+        </div>
+
+        <main class="site-main">
+            <article class="post post--featured">
+                <div class="post__img post__img__study-tips-1">
+                    <a href="post/study-tips-1.html" class="post__category-link">
+                        <h2>Study Tips (1/5)<span class="subheading">Introduction</span></h2>
+                        <div class="post__category">study</div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post__img post__img__study-tips-2">
+                    <a href="post/study-tips-2.html" class="post__category-link">
+                        <h2>Study Tips (2/5)<span class="subheading">Good Routines</span></h2>
+                        <div class="post__category">study</div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post__img post__img__study-tips-3">
+                    <a href="post/study-tips-3.html" class="post__category-link">
+                        <h2>Study Tips (3/5)<span class="subheading">Active vs Passive</span></h2>
+                        <div class="post__category">study</div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post__img post__img__study-tips-4">
+                    <a href="post/study-tips-4.html" class="post__category-link">
+                        <h2>Study Tips (4/5)<span class="subheading">Getting Started</span></h2>
+                        <div class="post__category">study</div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post__img post__img__study-tips-5">
+                    <a href="post/study-tips-5.html" class="post__category-link">
+                        <h2>Study Tips (5/5)<span class="subheading">Deep Learning</span></h2>
+                        <div class="post__category">study</div>
+                    </a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="site-footer">
         <a href="design-system.html">See our Design System</a>
     </footer>
 </body>
