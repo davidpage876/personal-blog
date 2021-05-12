@@ -18,6 +18,9 @@
                     <img class="nav-bar__logo" src="img/profile-img.jpg" alt="logo">
                     <p class="site-title">Dave's Blog</p>
                 </div>
+                <button class="mobile-nav-primary menu-toggle">
+                    <span class="menu-toggle__icon material-icons">menu</span>                        
+                </button>
                 <ul class="header-menu menu">
                     <li class="menu-item"><a href="index.html" class="menu-item__link">Home</a></li>
                     <li class="menu-item"><a href="#" class="menu-item__link">Life</a></li>
@@ -25,7 +28,7 @@
                     <li class="menu-item"><a href="#" class="menu-item__link">Code</a></li>
                     <li class="menu-item menu-item--search">
                         <button class="search-btn">
-                            <span class="search-btn__icon material-icons-outlined">search</span>
+                            <span class="search-btn__icon material-icons">search</span>
                         </button>
                     </li>
                 </ul>
@@ -33,18 +36,28 @@
         </nav>
 
         <div class="header-title header-title--home">
-            <h1>Dave's Blog</h1>
-            <p>A personal blog on nature, life & code</p>
+            <h1 class="header-title__heading">Dave's Blog</h1>
+            <p class="header-title__subheading">A personal blog on nature, life & code</p>
+            <ul class="header-title__social social-links">
+                <li class="social-links__icon social-links--fb">
+                    <img class="social-links__img" src="img/social-fb.jpg" alt="facebook">
+                </li>
+                <li class="social-links__icon social-links--twitter">
+                    <img class="social-links__img" src="img/social-twitter.jpg" alt="twitter">
+                </li>
+                <li class="social-links__icon social-links--linkdin">
+                    <img class="social-links__img" src="img/social-linkdin.jpg" alt="linkedin">
+                </li>
+            </ul>
         </div>
     </header>
-
     <div class="wrap">
 
         <div class="filters">
-            <button class="btn btn--selected">All</button>
-            <button class="btn">Life</button>
-            <button class="btn">Nature</button>
-            <button class="btn">Code</button>
+            <button class="toggle-btn toggle-btn--on">All</button>
+            <button class="toggle-btn">Life</button>
+            <button class="toggle-btn">Nature</button>
+            <button class="toggle-btn">Code</button>
         </div>
 
         <main class="site-main">
@@ -95,7 +108,70 @@
         </main>
     </div>
     <footer class="site-footer">
-        <a href="design-system.html">See our Design System</a>
+        <div class="footer-sections">
+
+            <section class="footer-section footer-section__about">
+                <h2>Blog by David Page</h2>
+                <p>I'm an Aussie web design professional with a
+                    background in game design, programming, CGI,
+                    special FX among other interests. In my personal life
+                    I love to run and hike.</p>
+            </section>
+            
+            <section class="footer-section footer-section__categories">
+                <h2>Categories</h2>
+                <ul class="nav-list">
+                    <li class="nav-list-item nav-list-item--current">All</li>
+                    <li class="nav-list-item">Life</li>
+                    <li class="nav-list-item">Nature</li>
+                    <li class="nav-list-item">Code</li>
+                </ul>
+            </section>
+
+            <section class="footer-section footer-section__archive">
+                <h2>Archive</h2>
+                <ul class="nav-list">
+                    <li class="nav-list-item">May 2021</li>
+                    <li class="nav-list-item">April 2021</li>
+                    <li class="nav-list-item">March 2021</li>
+                </ul>
+            </section>
+
+            <section class="footer-section footer-section__search">
+                <form class="search-box">
+                    <input class="search-box__input" type="text" placeholder="Search...">
+                    <button class="search-box__btn search-btn" type="submit">
+                        <span class="search-btn__icon material-icons">search</span>
+                    </button>
+                </form>
+            </section>
+
+            <section class="footer-section footer-section__social">
+                <h2>Follow</h2>
+                <ul class="footer-section__social social-links">
+                    <li class="social-links__icon social-links--fb">
+                        <img class="social-links__img" src="img/social-fb.jpg" alt="facebook">
+                    </li>
+                    <li class="social-links__icon social-links--twitter">
+                        <img class="social-links__img" src="img/social-twitter.jpg" alt="twitter">
+                    </li>
+                    <li class="social-links__icon social-links--linkdin">
+                        <img class="social-links__img" src="img/social-linkdin.jpg" alt="linkedin">
+                    </li>
+                </ul>
+            </section>
+    
+        </div>
+        <div class="footer-bar footer-info">
+            <ul>
+                <li class="footer-info--design">
+                    <a href="design-system.html">See my Design System</a>
+                </li>
+                <li class="footer-info--copyright">
+                    Website by David Page © 2021
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
