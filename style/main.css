@@ -5,6 +5,52 @@
 @import url(common.css);
 
 /* ----------------------------------------------------------- 
+ * Footer Layout
+ */
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "about"
+    "search"
+    "cat"
+    "arch"
+    "social";
+}
+
+.footer-section__about {
+    grid-area: about;
+}
+
+.footer-section__search {
+    grid-area: search;
+}
+
+.footer-section__categories {
+    grid-area: cat;
+}
+
+.footer-section__archive {
+    grid-area: arch;
+}
+
+.footer-section__social {
+    grid-area: social;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .footer-sections {
+        grid-template-columns: 5fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "about cat arch search"
+        "about cat arch social";
+    }
+
+}
+
+/* ----------------------------------------------------------- 
  * Home Page Layout
  */
 
