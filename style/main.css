@@ -5,7 +5,40 @@
 @import url(common.css);
 
 /* ----------------------------------------------------------- 
- * Footer Layout
+ * Main layout
+ */
+
+.home {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "head"
+    "cont"
+    "foot";
+}
+
+.site-header {
+    grid-area: head;    
+}
+
+.page-content {
+    grid-area: cont;
+}
+
+.site-footer {
+    grid-area: foot;
+}
+
+/* ----------------------------------------------------------- 
+ * Header layout
+ */
+
+.header-section__social {
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------- 
+ * Footer layout
  */
 
 .footer-sections {
@@ -19,7 +52,7 @@
     "social";
     gap: 30px;
     text-align: center;
-    margin: 67px auto 78px;
+    margin: 57px auto 78px;
 }
 
 .footer-section__title {
