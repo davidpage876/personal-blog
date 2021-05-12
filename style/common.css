@@ -84,7 +84,7 @@ body {
 }
 
 .wrap {
-    padding: 0 9px;
+    padding: 0 5%;
 }
 
 @media only screen and (min-width: 960px) {
@@ -122,10 +122,11 @@ body {
 }
 
 /* Simple buttons */
-.btn--simple, .btn--simple:hover {
+.btn--icon, .btn--icon:hover {
     border: none;
     background: transparent;
-    color: var(--accent-color);
+    color: var(--accent-color);    
+    padding: 8px;
 }
 
  /* Toggle buttons */
@@ -166,7 +167,7 @@ body {
     font-size: 27px;
 }
 
-.btn:not(.btn--simple) .material-icons {    
+.btn:not(.btn--icon) .material-icons {    
     color: var(--overlay-text-color);
     font-size: 23px;
 }

@@ -168,6 +168,7 @@
     z-index: -1;
 }
 
+/* Blog post cards */
 .post__link {
     text-decoration: none;
     color: var(--overlay-text-color);
@@ -195,6 +196,29 @@
     .post__content:hover::before {
         height: 100%;
         background: rgba(0 0 0 / 60%);
+    }
+
+}
+
+/* Search box */
+
+.search-box {
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box__input {
+    width: 166px;
+    height: 27px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .search-box {
+        margin-left: 0;
+        justify-content: flex-start;
     }
 
 }
