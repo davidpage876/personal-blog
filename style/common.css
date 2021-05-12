@@ -69,3 +69,7 @@ p, a, div, input {
     --footer-bar-color: #2a2a2a;
     --footer-bar-text-color: #ccc;
 }
+
+body {
+    background: var(--bg-color);
+}
