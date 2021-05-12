@@ -104,15 +104,10 @@
 
 .filters {
     justify-content: center;
-    margin: 25px;
+    margin: 25px 8px;
 }
 
 @media only screen and (min-width: 960px) {
-
-    .wrap {
-        max-width: 1350px;
-        margin: 0 auto;
-    }
 
     .post--featured {
         grid-row: 1 / span 2;
@@ -162,7 +157,7 @@
 @media only screen and (min-width: 960px) {
 
     .post--featured h2 {
-        font-size: 52px;
+        font-size: 42px;
     }
     
     .post__content:hover::before {

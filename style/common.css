@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 p, a, div, input, button {
@@ -81,6 +81,16 @@ body {
 
 body {
     margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .wrap {
+        width: 75%;
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
 }
 
 /* ----------------------------------------------------------- 
