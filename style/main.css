@@ -5,31 +5,6 @@
 @import url(common.css);
 
 /* ----------------------------------------------------------- 
- * Main layout
- */
-
-.home {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-    "head"
-    "cont"
-    "foot";
-}
-
-.site-header {
-    grid-area: head;    
-}
-
-.page-content {
-    grid-area: cont;
-}
-
-.site-footer {
-    grid-area: foot;
-}
-
-/* ----------------------------------------------------------- 
  * Header layout
  */
 
