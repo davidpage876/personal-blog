@@ -24,6 +24,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     gap: 5px;
+    text-align: right;
 }
 
 /* Gradient bg overlay */
@@ -48,7 +49,7 @@
 @media only screen and (min-width: 960px) {
 
     .wrap {
-        max-width: 1325px;
+        max-width: 1350px;
         margin: 0 auto;
     }
 
@@ -59,6 +60,39 @@
     .site-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ----------------------------------------------------------- 
+ * Home Page Appearance
+ */
+
+.post__category-link {
+    text-decoration: none;
+}
+
+.post__category-link {
+    text-decoration: none;
+    color: var(--overlay-text-color);
+}
+
+.post__subheading {
+    display: block;
+}
+
+.post__category {
+    color: var(--accent-color);
+}
+
+.post__content h2, .post__category {
+    margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .post--featured h2 {
+        font-size: 52px;
     }
 
 }
