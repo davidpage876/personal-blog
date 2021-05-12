@@ -20,3 +20,30 @@
     overflow: hidden !important;
 }
 
+/* ----------------------------------------------------------- 
+ * Background Images
+ */
+
+.img--home-hero {
+    background: url(../img/home-hero.jpg);
+}
+
+.img--study-tips-1 {
+    background: url(../img/study-tips-1.jpg);
+}
+
+.img--study-tips-2 {
+    background: url(../img/study-tips-2.jpg);
+}
+
+.img--study-tips-3 {
+    background: url(../img/study-tips-3.jpg);
+}
+
+.img--study-tips-4 {
+    background: url(../img/study-tips-4.jpg);
+}
+
+.img--study-tips-5 {
+    background: url(../img/study-tips-5.jpg);
+}
