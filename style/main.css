@@ -17,6 +17,15 @@
     "cat"
     "arch"
     "social";
+    grid-gap: 30px 50px;
+    text-align: center;
+    margin: 67px auto 78px;
+}
+
+.footer-section__title {
+    color: var(--accent-color);
+    font-size: 24px;
+    margin: 0 0 16px;
 }
 
 .footer-section__about {
@@ -46,6 +55,29 @@
         grid-template-areas: 
         "about cat arch search"
         "about cat arch social";
+        text-align: left;
+    }
+
+}
+
+/* Footer nav */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list-item {
+    margin-bottom: 13px;
+}
+
+.nav-list-item a {
+    color: var(--text-color);
+}
+
+@media only screen and (min-width: 960px) {
+
+    .nav-list-item {
+        margin-bottom: 6px;
     }
 
 }

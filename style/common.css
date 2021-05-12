@@ -51,7 +51,7 @@ h2 {
 }
 
 p, a, div, input, button {
-    font: 12px/1.5 "comfortaa";
+    font: 13px/2 "comfortaa";
 }
 
 /* ----------------------------------------------------------- 
@@ -83,12 +83,17 @@ body {
     margin: 0;
 }
 
+.wrap {
+    padding: 0 9px;
+}
+
 @media only screen and (min-width: 960px) {
 
     .wrap {
         width: 75%;
         max-width: 1350px;
         margin: 0 auto;
+        padding: 0;
     }
 
 }
@@ -107,13 +112,20 @@ body {
     text-decoration: none;
     border: solid 2px var(--accent-color);
     border-radius: 35px;
-    padding: 8px 20px;
+    padding: 8px 12px;
     background: var(--accent-color);
     color: var(--overlay-text-color);
 }
 
 .btn:hover {
     background: var(--accent-light-color);
+}
+
+/* Simple buttons */
+.btn--simple, .btn--simple:hover {
+    border: none;
+    background: transparent;
+    color: var(--accent-color);
 }
 
  /* Toggle buttons */
@@ -145,4 +157,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+/* Google material font icons */
+.material-icons {
+    color: var(--accent-color);
+    vertical-align: middle;
+    font-size: 27px;
+}
+
+.btn:not(.btn--simple) .material-icons {    
+    color: var(--overlay-text-color);
+    font-size: 23px;
 }
