@@ -87,10 +87,14 @@ body {
  * Buttons
  */
 
+ /* Default button appearance */
 .btn {
+    display: inline-block;
     cursor: pointer;
     font-size: 15px;
+    font-weight: bold;
     line-height: 1;
+    text-decoration: none;
     border: solid 2px var(--accent-color);
     border-radius: 35px;
     padding: 8px 20px;
@@ -99,6 +103,36 @@ body {
 }
 
 .btn:hover {
-    border-color: var(--accent-light-color);
     background: var(--accent-light-color);
+}
+
+ /* Toggle buttons */
+.toggle-btn {
+    color: var(--accent-color);
+    background: var(--bg-color);
+}
+
+.toggle-btn:hover {
+    background: var(--accent-light-color);
+    color: var(--overlay-text-color);
+}
+
+.toggle-btn--on {    
+    background: var(--accent-color);
+    color: var(--overlay-text-color);
+}
+
+.toggle-btn--disabled {
+    cursor: unset;
+}
+
+.toggle-btn--disabled:hover {    
+    background: var(--accent-color);
+}
+
+ /* Button groups */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
