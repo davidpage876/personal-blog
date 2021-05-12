@@ -73,3 +73,11 @@ p, a, div, input {
 body {
     background: var(--bg-color);
 }
+
+/* ----------------------------------------------------------- 
+ * General layout
+ */
+
+body {
+    margin: 0;
+}

@@ -51,6 +51,28 @@
 }
 
 /* ----------------------------------------------------------- 
+ * Footer bar
+ */
+ 
+.footer-bar {
+    background: var(--footer-bar-color);
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.footer-info, .footer-info a {    
+    color: var(--footer-bar-text-color);
+}
+
+/* ----------------------------------------------------------- 
  * Home Page Layout
  */
 
