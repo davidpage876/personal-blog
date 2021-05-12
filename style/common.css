@@ -50,7 +50,7 @@ h2 {
     font-size: 35px;
 }
 
-p, a, div, input {
+p, a, div, input, button {
     font: 12px/1.5 "comfortaa";
 }
 
@@ -61,7 +61,8 @@ p, a, div, input {
 :root {
     --bg-color: #fff;
     --accent-color: #00b513;
-    --img-placeholder: #306f36;
+    --accent-dark-color: #306f36;    
+    --accent-light-color: #00ce15;
     --text-color: #434343;
     --light-text-color: #7B7B7B;
     --overlay-text-color: #fff;
@@ -80,4 +81,24 @@ body {
 
 body {
     margin: 0;
+}
+
+/* ----------------------------------------------------------- 
+ * Buttons
+ */
+
+.btn {
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1;
+    border: solid 2px var(--accent-color);
+    border-radius: 35px;
+    padding: 8px 20px;
+    background: var(--accent-color);
+    color: var(--overlay-text-color);
+}
+
+.btn:hover {
+    border-color: var(--accent-light-color);
+    background: var(--accent-light-color);
 }
