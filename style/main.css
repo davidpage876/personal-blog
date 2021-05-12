@@ -4,36 +4,65 @@
 
 @import url(common.css);
 
+/* ----------------------------------------------------------- 
+ * Home Page Layout
+ */
+
+.post__img {
+    width: 100%;
+    height: 100%;
+    background: center / cover no-repeat var(--img-placeholder);
+}
+
+.site-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .post--featured {
+        grid-row: 1 / span 2;
+    }
+
+    .site-main {
+        display: grid;
+        grid-template-columns: 6fr 5fr;
+    }
+
+}
 
 /* ----------------------------------------------------------- 
  * Background Images
  */
 
-.img--home-hero {
-    background: url(../img/home-hero.jpg);
+ .img--home-hero {
+    background-image: url(../img/home-hero.jpg);
 }
 
 .img--study-tips-1 {
-    background: url(../img/study-tips-1.jpg);
+    background-image: url(../img/study-tips-1.jpg);
 }
 
 .img--study-tips-2 {
-    background: url(../img/study-tips-2.jpg);
+    background-image: url(../img/study-tips-2.jpg);
 }
 
 .img--study-tips-3 {
-    background: url(../img/study-tips-3.jpg);
+    background-image: url(../img/study-tips-3.jpg);
 }
 
 .img--study-tips-4 {
-    background: url(../img/study-tips-4.jpg);
+    background-image: url(../img/study-tips-4.jpg);
 }
 
 .img--study-tips-5 {
-    background: url(../img/study-tips-5.jpg);
+    background-image: url(../img/study-tips-5.jpg);
 }
-
-/* ----------------------------------------------------------- 
- * Home Page Layout
- */
-
