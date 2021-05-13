@@ -121,12 +121,20 @@ body {
     background: var(--accent-light-color);
 }
 
-/* Simple buttons */
+/* Icon buttons */
 .btn--icon, .btn--icon:hover {
     border: none;
     background: transparent;
     color: var(--accent-color);    
-    padding: 8px;
+    padding: 14px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .btn--icon, .btn--icon:hover {
+        padding: 8px;
+    }
+
 }
 
  /* Toggle buttons */
@@ -170,4 +178,20 @@ body {
 .btn:not(.btn--icon) .material-icons {    
     color: var(--overlay-text-color);
     font-size: 23px;
+}
+
+/* ----------------------------------------------------------- 
+ * Menus
+ */
+
+.menu-item:hover a {
+    color: var(--accent-color);
+}
+
+.menu-item--current a {
+    font-weight: bold;
+}
+
+.menu-item__link {
+    padding: 15px 5px;
 }
