@@ -5,6 +5,48 @@
 @import url(common.css);
 
 /* ----------------------------------------------------------- 
+ * Social Links
+ */
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links__icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--accent-dark-color);
+}
+
+.social-links--fb {
+    background: #4064AC;
+}
+
+.social-links--twitter {
+    background: #4DA6E9;
+}
+
+.social-links--linkdin {
+    background: #0077B0;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.social-links__img {
+    width: 60%;
+}
+
+/* ----------------------------------------------------------- 
  * Header layout
  */
 
