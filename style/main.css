@@ -8,6 +8,11 @@
  * Header layout
  */
 
+/* Fill the space behind sticky header */
+.primary-nav {
+    height: 55px;
+}
+
 /* Navigation bar */
 .nav-bar {    
     display: grid;
@@ -66,6 +71,11 @@
     .nav-bar {
         grid-template-columns: auto 1fr;
         padding: 0 24px;
+
+        /* Sticky header, not used on mobile */
+        position: fixed;
+        left: 0;
+        right: 0;
     }
 
     .mobile-nav-btn {
