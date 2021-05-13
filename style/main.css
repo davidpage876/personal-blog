@@ -305,7 +305,7 @@
 }
 
 /* Blog post cards */
-.post__link {
+.post__link, .post__link:hover {
     text-decoration: none;
     color: var(--overlay-text-color);
 }
