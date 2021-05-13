@@ -21,10 +21,10 @@
                     <img class="site-logo nav-bar__logo" src="img/profile-img.png" alt="logo">
                     <p class="site-title">Dave's Blog</p>
                 </a>
-                <button class="mobile-nav-btn menu-toggle btn  btn--icon">
+                <button id="mobile-nav-btn" class="mobile-nav-btn menu-toggle btn btn--icon">
                     <span class="menu-toggle__icon material-icons">menu</span>
                 </button>
-                <ul class="header-menu menu">
+                <ul id="nav-menu" class="header-menu menu">
                     <li class="menu-item menu-item--current"><a href="index.html" class="menu-item__link">Home</a></li>
                     <li class="menu-item"><a href="#" class="menu-item__link">Life</a></li>
                     <li class="menu-item"><a href="#" class="menu-item__link">Nature</a></li>
@@ -211,6 +211,17 @@
             </ul>
         </div>
     </footer>
-</body>
+    <script>      
 
+        /* Makes the mobile nav menu button work */
+        var btn = document.getElementById("mobile-nav-btn");
+
+        btn.addEventListener("touchstart", function(event) {
+            event.preventDefault();
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("toggled");
+        });
+
+    </script>
+</body>
 </html>
