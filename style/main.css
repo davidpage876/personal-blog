@@ -26,12 +26,24 @@
     background: #4064AC;
 }
 
+.social-links--fb:hover {
+    background: #628ad8;
+}
+
 .social-links--twitter {
     background: #4DA6E9;
 }
 
+.social-links--twitter:hover {
+    background: #71c1ff;
+}
+
 .social-links--linkdin {
     background: #0077B0;
+}
+
+.social-links--linkdin:hover {
+    background: #149ad8;
 }
 
 .social-links a {
