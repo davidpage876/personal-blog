@@ -23,7 +23,7 @@
  * Theme colors
  */
 
- :root {
+:root {
     --bg-color: #fff;
     --accent-color: #00b513;
     --accent-dark-color: #306f36;    
@@ -79,6 +79,42 @@ div,
 input, 
 button {
     font: 14px/2 "comfortaa";
+}
+
+/* ----------------------------------------------------------- 
+ * Image placeholder color while loading
+ */
+
+.use-placeholder {
+    background-color: var(--accent-dark-color);
+}
+
+/* ----------------------------------------------------------- 
+ * Background images
+ */
+
+.img--home-hero {
+    background-image: url(../img/home-hero.jpg);
+}
+
+.img--study-tips-1 {
+    background-image: url(../img/study-tips-5.jpg);
+}
+
+.img--study-tips-2 {
+    background-image: url(../img/study-tips-2.jpg);
+}
+
+.img--study-tips-3 {
+    background-image: url(../img/study-tips-3.jpg);
+}
+
+.img--study-tips-4 {
+    background-image: url(../img/study-tips-4.jpg);
+}
+
+.img--study-tips-5 {
+    background-image: url(../img/study-tips-1.jpg);
 }
 
 /* ----------------------------------------------------------- 
