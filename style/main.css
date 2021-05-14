@@ -367,15 +367,27 @@
 @media only screen and (min-width: 960px) {
 
     .footer-sections {
-        grid-template-columns: 5fr 3fr 3fr 3fr;
-        grid-template-areas: 
-        "about cat arch search"
-        "about cat arch social";
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "about cat"
+        "search arch"
+        "social arch";
         text-align: left;
     }
     
     .footer-section__text {
         margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1350px) {
+
+    .footer-sections {
+        grid-template-columns: 5fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "about cat arch search"
+        "about cat arch social";
     }
 
 }
