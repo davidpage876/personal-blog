@@ -310,6 +310,7 @@
 
     .header-menu .search-box__input {
         width: 70%;
+        border: solid 2px var(--accent-color);
     }
 
 }
