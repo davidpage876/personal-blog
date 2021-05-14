@@ -101,6 +101,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    background-color: var(--accent-dark-color); /* placeholder while loading */
 }
 
 .header-hero__img::before {
