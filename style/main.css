@@ -60,6 +60,107 @@
 }
 
 /* ----------------------------------------------------------- 
+ * Hero
+ */
+ 
+.header-hero {
+    height: 643px; /* fallback */
+    height: 75vh;
+    position: relative;
+}
+
+.header-hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 7px; /* fallback */
+    margin-top: 1vh;
+}
+
+.header-hero__img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-hero__img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0 0 0 / 65%), rgba(0 0 0 / 15%));
+}
+
+.header-hero__heading,
+.header-hero__subheading {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.header-hero__heading {
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 1.2;
+    max-width: 288px;
+    text-shadow: 0 0 6px rgb(0 0 0 / 60%);
+}
+
+.header-hero__subheading {
+    font-size: 21px;
+    line-height: 1.4;
+    max-width: 226px;
+}
+
+.header-hero__social {
+    margin-bottom: 0;
+}
+
+.header-hero .social-links {
+    gap: 29px;
+}
+
+.header-hero .social-links__icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .header-hero__img {
+        /* parallax effect (desktop only) */
+        background-position: center -72px;
+        background-attachment: fixed; 
+    }
+   
+    .header-hero__content {
+        margin-top: 20px; /* fallback */
+        margin-top: 6vh;
+    }
+
+    .header-hero__heading {
+        font-size: 96px;
+        max-width: unset;
+    }
+
+    .header-hero__subheading {
+        font-size: 25px;
+        max-width: 410px;
+    }
+
+}
+
+/* ----------------------------------------------------------- 
  * Header layout
  */
 
@@ -196,15 +297,6 @@
         padding-top: 21px;
     }
 
-}
-
- /* Title section */
-.header-title__heading {
-    margin: 0;
-}
-
-.header-section__social {
-    margin-bottom: 0;
 }
 
 /* ----------------------------------------------------------- 
@@ -415,7 +507,6 @@
 }
 
 /* Search box */
-
 .search-box {
     display: flex;
     margin-left: 10px;
