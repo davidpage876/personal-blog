@@ -294,7 +294,11 @@
 
     .header-menu .menu-item--search {
         border: none;
-        padding-top: 21px;
+        padding-top: 27px;
+    }
+
+    .header-menu .search-box__input {
+        width: 70%;
     }
 
 }
@@ -509,13 +513,13 @@
 /* Search box */
 .search-box {
     display: flex;
-    margin-left: 10px;
+    margin-left: 20px;
     justify-content: center;
     align-items: center;
 }
 
 .search-box__input {
-    width: 166px;
+    width: 60%;
     height: 27px;
 }
 
