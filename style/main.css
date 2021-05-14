@@ -10,14 +10,15 @@
 
 .social-links {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 31px;
     list-style: none;
     padding: 0;
 }
 
 .social-links__icon {
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
     border-radius: 50%;
     background: var(--accent-dark-color);
 }
