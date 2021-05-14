@@ -213,5 +213,13 @@ a, a:hover {
 }
 
 .menu-item__link {
-    padding: 15px 0;
+    padding: 15px 15px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .menu-item__link {
+        padding: 15px 0;
+    }
+
 }
