@@ -111,5 +111,20 @@
 
 .post-content {
     max-width: 800px;
-    margin: 60px auto 75px;
+    margin: 60px auto;
+    padding: 0 4%;
+}
+
+.header-hero--post .header-hero__post-category {
+    font-size: 21px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .post-content {
+        padding: 0;
+    }
+
 }
