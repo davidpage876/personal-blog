@@ -26,6 +26,10 @@
     margin: 0 auto;
 }
 
+.footer-section__home-link {
+    text-decoration: none;
+}
+
 .footer-section__author-bio {
     grid-area: author;
 }
@@ -77,7 +81,6 @@
 }
 
 /* Author bio */
-
 .footer-section .author-bio__content {
     max-width: 90%;
 }
@@ -148,7 +151,6 @@
 }
 
 /* Footer search */
-
 .footer-section .search-box__input {
     max-width: 210px;
 }
