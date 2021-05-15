@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "about"
+    "author"
     "search"
     "cat"
     "arch"
@@ -27,8 +27,8 @@
     margin: 0 auto;
 }
 
-.footer-section__about {
-    grid-area: about;
+.footer-section__author-bio {
+    grid-area: author;
 }
 
 .footer-section__search {
@@ -52,7 +52,7 @@
     .footer-sections {
         grid-template-columns: 2fr 1fr;
         grid-template-areas:
-        "about cat"
+        "author cat"
         "search arch"
         "social arch";
         text-align: left;
@@ -69,8 +69,8 @@
     .footer-sections {
         grid-template-columns: 5fr 3fr 3fr 3fr;
         grid-template-areas: 
-        "about cat arch search"
-        "about cat arch social";
+        "author cat arch search"
+        "author cat arch social";
     }
 
 }
