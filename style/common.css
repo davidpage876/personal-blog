@@ -486,6 +486,36 @@ hr {
     margin-bottom: 50px;
 }
 
+/* Share this post */
+
+.share {    
+    margin: 55px 0 0;
+}
+
+.share__hr {
+    width: 100px;
+}
+
+.share__title {
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .share__hr {
+        margin: 0;
+    }
+
+    .share__title {
+        font-size: 24px;
+        text-align: left;
+    }
+
+}
+
 /* ----------------------------------------------------------- 
  * Other
  */
