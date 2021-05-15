@@ -59,21 +59,6 @@ body {
  * Typology
  */
 
-h1, 
-h2, 
-h3 {
-    font: bold 25px/1.5 "comfortaa", sans-serif;
-    color: var(--accent-color);
-}
-
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 32px;
-}
-
 p, 
 a, 
 div, 
@@ -91,6 +76,21 @@ li {
 .post-content button,
 .post-content li {
     font-size: 16px;
+}
+
+h1, 
+h2, 
+h3 {
+    font: bold 25px/1.5 "comfortaa", sans-serif;
+    color: var(--accent-color);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 /* ----------------------------------------------------------- 
@@ -219,6 +219,17 @@ hr {
     width: 30%;
     min-width: 130px;
     max-width: 260px;
+}
+
+/* ----------------------------------------------------------- 
+ * Internal link anchors
+ */
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
 
 /* ----------------------------------------------------------- 
