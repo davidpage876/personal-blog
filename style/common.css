@@ -136,6 +136,12 @@ body {
 
 }
 
+/* Ensures footer stays at the bottom of the page when the content 
+   is too small to fill the viewport */
+.page-content {
+    min-height: 89vh;
+}
+
 /* ----------------------------------------------------------- 
  * Links
  */
@@ -428,7 +434,7 @@ hr {
     text-decoration: none;
 }
 
-.post-container {
+.post-area {
     margin: 0 auto 60px;
 }
 
