@@ -65,7 +65,7 @@ div,
 input, 
 button,
 li {
-    font: 14px/2 "comfortaa";
+    font: 16px/2 "comfortaa";
     color: var(--text-color);
 }
 
@@ -75,7 +75,7 @@ li {
 .post-content input, 
 .post-content button,
 .post-content li {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h1, 
@@ -91,6 +91,26 @@ h1 {
 
 h2 {
     font-size: 32px;
+}
+
+@media only screen and (min-width: 960px) {
+    p, 
+    a, 
+    div, 
+    input, 
+    button,
+    li {
+        font-size: 14px;
+    }
+
+    .post-content p,
+    .post-content a,
+    .post-content div,
+    .post-content input, 
+    .post-content button,
+    .post-content li {
+        font-size: 16px;
+    }
 }
 
 /* ----------------------------------------------------------- 
@@ -193,7 +213,15 @@ a, a:hover {
 .btn-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 25px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .btn-group {
+        gap: 12px;
+    }
+
 }
 
 /* Google material font icons */
