@@ -63,6 +63,7 @@ h1,
 h2, 
 h3 {
     font: bold 25px/1.5 "comfortaa", sans-serif;
+    color: var(--accent-color);
 }
 
 h1 {
@@ -80,6 +81,7 @@ input,
 button,
 li {
     font: 14px/2 "comfortaa";
+    color: var(--text-color);
 }
 
 .post-content p,
@@ -315,8 +317,33 @@ hr {
 }
 
 /* ----------------------------------------------------------- 
+ * Search box
+ */
+
+.search-box {
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box__input {
+    width: 80%;
+    height: 27px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    .search-box {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+
+}
+* ----------------------------------------------------------- 
  * Image placeholder color while loading
  */
+/
 
  .use-placeholder {
     background-color: var(--accent-dark-color);

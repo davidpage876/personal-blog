@@ -168,7 +168,7 @@
     list-style: none;
 }
 
-.footer-info, 
+.footer-info li, 
 .footer-info a {    
     color: var(--footer-bar-text-color);
 }
