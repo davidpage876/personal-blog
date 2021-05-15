@@ -77,8 +77,18 @@ p,
 a, 
 div, 
 input, 
-button {
+button,
+li {
     font: 14px/2 "comfortaa";
+}
+
+.post-content p,
+.post-content a,
+.post-content div,
+.post-content input, 
+.post-content button,
+.post-content li {
+    font-size: 16px;
 }
 
 /* ----------------------------------------------------------- 
@@ -343,6 +353,11 @@ hr {
 /* ----------------------------------------------------------- 
  * Other
  */
+
+.filters {
+    justify-content: center;
+    margin: 25px 8px;
+}
 
 .small-icon {
     max-width: 20px;
