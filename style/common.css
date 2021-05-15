@@ -216,7 +216,9 @@ hr {
     border-style: none;
     border-top: solid 1px var(--border-color);
     margin: 5px auto;
-    max-width: 80px;
+    width: 30%;
+    min-width: 130px;
+    max-width: 260px;
 }
 
 /* ----------------------------------------------------------- 
@@ -340,10 +342,10 @@ hr {
     }
 
 }
-* ----------------------------------------------------------- 
+
+/*----------------------------------------------------------- 
  * Image placeholder color while loading
  */
-/
 
  .use-placeholder {
     background-color: var(--accent-dark-color);
