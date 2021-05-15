@@ -11,9 +11,9 @@
     "cat"
     "arch"
     "social";
-    gap: 30px;
+    gap: 20px 40px;
     text-align: center;
-    margin: 57px auto 78px;
+    margin: 67px auto 88px;
 }
 
 .footer-section__title {
@@ -23,7 +23,6 @@
 }
 
 .footer-section__text {
-    max-width: 360px;
     margin: 0 auto;
 }
 
@@ -50,11 +49,12 @@
 @media only screen and (min-width: 960px) {
 
     .footer-sections {
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas:
-        "author cat"
-        "search arch"
-        "social arch";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "author author author"
+        "cat arch search"
+        "cat arch social";
+        gap: 40px;
         text-align: left;
     }
     
@@ -64,15 +64,43 @@
 
 }
 
-@media only screen and (min-width: 1350px) {
+@media only screen and (min-width: 1700px) {
 
     .footer-sections {
-        grid-template-columns: 5fr 3fr 3fr 3fr;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
         grid-template-areas: 
         "author cat arch search"
         "author cat arch social";
+        gap: 20px 40px;
     }
 
+}
+
+/* Author bio */
+
+.footer-section .author-bio__content {
+    max-width: 90%;
+}
+
+.footer-section__author-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-section .author-bio__avatar {
+    max-width: 217px;    
+    max-height: 217px;
+}
+
+.footer-section .author-bio__company a {
+    text-decoration: none;
+}
+
+.footer-section .author-bio__desc {
+    padding-top: 12px;
 }
 
 /* Footer nav */
@@ -89,15 +117,43 @@
     color: var(--text-color);
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 600px) {
 
-    .nav-list-item {
-        margin-bottom: 6px;
+    .footer-section .author-bio__content {
+        max-width: 53%;
     }
 
 }
 
- /* Footer bar */
+@media only screen and (min-width: 960px) {
+
+    .footer-section__author-bio {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .footer-section .author-bio__content {
+        max-width: unset;
+    }
+
+    .nav-list-item {
+        margin-bottom: 6px;
+    }
+    
+    .footer-section hr {
+        margin-left: 8px;
+        margin-right: 0;
+    }
+
+}
+
+/* Footer search */
+
+.footer-section .search-box__input {
+    max-width: 210px;
+}
+
+/* Footer bar */
 .footer-bar {
     background: var(--footer-bar-color);
 }

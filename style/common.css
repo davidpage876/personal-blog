@@ -197,6 +197,17 @@ a, a:hover {
 }
 
 /* ----------------------------------------------------------- 
+ * Horizontal dividers
+ */
+ 
+hr {
+    border-style: none;
+    border-top: solid 1px var(--border-color);
+    margin: 5px auto;
+    max-width: 80px;
+}
+
+/* ----------------------------------------------------------- 
  * Menus
  */
  
@@ -327,4 +338,14 @@ a, a:hover {
 
 .img--study-tips-5 {
     background-image: url(../img/study-tips-1.jpg);
+}
+
+/* ----------------------------------------------------------- 
+ * Other
+ */
+
+.small-icon {
+    max-width: 20px;
+    vertical-align: middle;
+    margin-top: -4px;
 }
