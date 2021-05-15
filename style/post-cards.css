@@ -33,8 +33,11 @@
 .post-card-flex {
     display: flex;
     flex-direction: column;
-    height: 410px;
     gap: 10px;
+}
+
+.post-card-flex > .post {
+    height: 317px;
 }
 
 @media only screen and (min-width: 960px) {
@@ -51,10 +54,12 @@
     .post-card-flex {
         flex-direction: row;
         justify-content: center;
+        height: 410px;
     }
 
     .post-card-flex > .post {
         flex: 1;
+        height: unset;
     }
 
 }

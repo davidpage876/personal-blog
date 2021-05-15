@@ -486,6 +486,14 @@ hr {
     margin-bottom: 50px;
 }
 
+.related-articles .post__content {
+    width: 95%;
+}
+
+.related-articles h2 {
+    font-size: 28px;
+}
+
 /* Share this post */
 
 .share {    
