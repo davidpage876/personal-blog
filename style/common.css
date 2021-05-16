@@ -129,6 +129,10 @@ blockquote {
     font-size: 20px;
 }
 
+.blockquote-figure {
+    border-left: solid 3px var(--accent-color);
+}
+
 @media only screen and (min-width: 960px) {
 
     blockquote {
