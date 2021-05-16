@@ -77,10 +77,14 @@
 
 @media only screen and (min-width: 960px) {
 
-    .header-hero__img {
+    .header-hero__img.parallax {
         /* parallax effect (desktop only) */
-        background-position: center -72px;
+        background-position: center;
         background-attachment: fixed; 
+    }
+
+    .header-hero__img.parallax--push-up {
+        background-position: center -72px;
     }
    
     .header-hero__heading {
