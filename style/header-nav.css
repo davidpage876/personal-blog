@@ -8,7 +8,7 @@
 }
 
 /* Navigation bar */
-.nav-bar {    
+.nav-bar {
     display: grid;
     grid-template-columns: 1fr auto;
     position: relative;
@@ -86,13 +86,13 @@
         align-items: center;
         padding: 0;
         margin: 0;
-        list-style: none;    
+        list-style: none;
     }
 
     .header-menu .btn--icon {
         padding: 0;
     }
-    
+
     .header-menu .search-box {
         display: none;
     }
@@ -115,7 +115,7 @@
         box-shadow: 0 6px 8px rgb(0 0 0 / 20%);
     }
 
-    .header-menu .menu-item__link, 
+    .header-menu .menu-item__link,
     .header-menu .btn--icon .material-icons {
         color: var(--overlay-text-color);
     }

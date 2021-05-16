@@ -79,7 +79,7 @@
     background: linear-gradient(0deg, rgba(0,0,0, 60%), transparent);
     z-index: -1;
 }
-    
+
 .post__content:hover::before {
     height: 100%;
     background: rgba(0 0 0 / 60%);
@@ -100,7 +100,7 @@
     font-size: 20px;
 }
 
-.post__content h2, 
+.post__content h2,
 .post__category {
     margin: 0;
 }

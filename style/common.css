@@ -1,10 +1,10 @@
 /*
- * Common styling based on our design system. 
- * 
+ * Common styling based on our design system.
+ *
  * See design-system.html for more information.
  */
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Accessibility
  */
 
@@ -19,14 +19,14 @@
     overflow: hidden !important;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Theme colors
  */
 
 :root {
     --bg-color: #fff;
     --accent-color: #00b513;
-    --accent-dark-color: #306f36;    
+    --accent-dark-color: #306f36;
     --accent-light-color: #00ce15;
     --text-color: #222;
     --light-text-color: #444;
@@ -40,7 +40,7 @@ body {
     background: var(--bg-color);
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Fonts
  */
 
@@ -55,14 +55,14 @@ body {
     font-weight: bold;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Typology
  */
 
-p, 
-a, 
-div, 
-input, 
+p,
+a,
+div,
+input,
 button,
 li,
 figcaption {
@@ -73,14 +73,14 @@ figcaption {
 .post-content p,
 .post-content a,
 .post-content div,
-.post-content input, 
+.post-content input,
 .post-content button,
 .post-content li {
     font-size: 18px;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
     font: bold 25px/1.5 "comfortaa", sans-serif;
     color: var(--accent-color);
@@ -95,10 +95,10 @@ h2 {
 }
 
 @media only screen and (min-width: 960px) {
-    p, 
-    a, 
-    div, 
-    input, 
+    p,
+    a,
+    div,
+    input,
     button,
     li,
     figcaption {
@@ -108,14 +108,14 @@ h2 {
     .post-content p,
     .post-content a,
     .post-content div,
-    .post-content input, 
+    .post-content input,
     .post-content button,
     .post-content li {
         font-size: 16px;
     }
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * General layout
  */
 
@@ -138,14 +138,14 @@ body {
 
 }
 
-/* Ensures footer stays at the bottom of the page when the content 
+/* Ensures footer stays at the bottom of the page when the content
    is too small to fill the viewport */
 .page-content {
     min-height: 89vh;
     padding-bottom: 50px;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Links
  */
 
@@ -154,7 +154,7 @@ a, a:hover {
     font-weight: bold;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Buttons
  */
 
@@ -178,17 +178,17 @@ a, a:hover {
 }
 
 /* Icon buttons */
-.btn--icon, 
+.btn--icon,
 .btn--icon:hover {
     border: none;
     background: transparent;
-    color: var(--accent-color);    
+    color: var(--accent-color);
     padding: 14px;
 }
 
 @media only screen and (min-width: 960px) {
 
-    .btn--icon, 
+    .btn--icon,
     .btn--icon:hover {
         padding: 8px;
     }
@@ -206,7 +206,7 @@ a, a:hover {
     color: var(--overlay-text-color);
 }
 
-.toggle-btn--on {    
+.toggle-btn--on {
     background: var(--accent-color);
     color: var(--overlay-text-color);
 }
@@ -215,7 +215,7 @@ a, a:hover {
     cursor: unset;
 }
 
-.toggle-btn--disabled:hover {    
+.toggle-btn--disabled:hover {
     background: var(--accent-color);
 }
 
@@ -241,12 +241,12 @@ a, a:hover {
     font-size: 27px;
 }
 
-.btn:not(.btn--icon) .material-icons {    
+.btn:not(.btn--icon) .material-icons {
     color: var(--overlay-text-color);
     font-size: 23px;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Lists
  */
 
@@ -254,10 +254,10 @@ li {
     padding-left: 5px;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Horizontal dividers
  */
- 
+
 hr {
     border-style: none;
     border-top: solid 1px var(--border-color);
@@ -267,7 +267,7 @@ hr {
     max-width: 260px;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Figures
  */
 
@@ -280,7 +280,7 @@ figcaption {
     color: var(--light-text-color);
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Internal link anchors
  */
 
@@ -291,10 +291,10 @@ figcaption {
     visibility: hidden;
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Menus
  */
- 
+
 .menu-item {
     padding: 0;
 }
@@ -324,7 +324,7 @@ figcaption {
 
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Social Links
  */
 
@@ -394,7 +394,7 @@ figcaption {
 
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Search box
  */
 
@@ -421,7 +421,7 @@ figcaption {
 
 }
 
-/*----------------------------------------------------------- 
+/*-----------------------------------------------------------
  * Image placeholder color while loading
  */
 
@@ -429,7 +429,7 @@ figcaption {
     background-color: var(--accent-dark-color);
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Background images
  */
 
@@ -457,7 +457,7 @@ figcaption {
     background-image: url(../img/study-tips-1.jpg);
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Post Page
  */
 
@@ -516,7 +516,7 @@ figcaption {
     .sep {
         display: block;
     }
-    
+
 }
 
 /* Related articles */
@@ -535,7 +535,7 @@ figcaption {
 
 /* Share this post */
 
-.share {    
+.share {
     margin: 55px 0 0;
 }
 
@@ -563,7 +563,7 @@ figcaption {
 
 }
 
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
  * Other
  */
 
