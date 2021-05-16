@@ -123,6 +123,20 @@ a, a:hover {
     }
 }
 
+/* Blockquotes */
+blockquote {
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 960px) {
+
+    blockquote {
+        font-size: 24px;
+    }
+
+}
+
 /* The assessment criteria seems to suggest I need to declare these (?). */
 p em {
     font-style: italic;
