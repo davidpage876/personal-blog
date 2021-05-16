@@ -386,6 +386,7 @@ hr {
     width: 80%;
     max-width: 250px;
     height: 27px;
+    padding: 3px 6px;
 }
 
 @media only screen and (min-width: 960px) {
