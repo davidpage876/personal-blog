@@ -46,11 +46,14 @@
 
         <div class="header-hero header-hero--post">
             <div class="header-hero__img img--study-tips-1 parallax parallax--push-up use-placeholder">
-                <div class="header-hero__content">
-                    <h1 class="header-hero__heading header-hero__heading--large">Study Tips</h1>
+
+                <!-- For visual users only -->
+                <div class="header-hero__content" aria-hidden="true">
+                    <div class="header-hero__heading header-hero__heading--large">Study Tips</div>
                     <p class="header-hero__subheading">By David Page 14 May 2021</p>
-                    <a href="../index.html" class="header-hero__post-category">study</a>
+                    <a href="../index.html" class="header-hero__post-category" title="category" tabindex="-1">study</a>
                 </div>
+
             </div>
         </div>
     </header>
@@ -64,6 +67,14 @@
             </aside>
             <main class="site-main post-content">
                 <article class="post-article">
+
+                    <!-- Blog title info is displayed visually within the header hero. -->
+                    <div class="screen-reader-only">
+                        <h1>Study Tips</h1>
+                        <p>By David Page 14 May 2021</p>
+                        <a href="../index.html" title="category">study</a>
+                    </div>
+
                     <section class="post-section post-section--intro">
                         <a class="anchor" id="intro"></a>
                         <h2>Introduction <a href="#intro">#</a></h2>
