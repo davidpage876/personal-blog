@@ -96,6 +96,12 @@ h2 {
     font-size: 32px;
 }
 
+a, a:hover {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 @media only screen and (min-width: 960px) {
     p,
     a,
@@ -148,15 +154,6 @@ body {
 }
 
 /* -----------------------------------------------------------
- * Links
- */
-
-a, a:hover {
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-/* -----------------------------------------------------------
  * Buttons
  */
 
@@ -177,6 +174,7 @@ a, a:hover {
 
 .btn:hover {
     background: var(--accent-light-color);
+    text-decoration: none;
 }
 
 /* Icon buttons */
