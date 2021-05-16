@@ -102,6 +102,14 @@ a, a:hover {
     text-decoration: underline;
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 960px) {
     p,
     a,
