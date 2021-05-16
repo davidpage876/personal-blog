@@ -64,6 +64,7 @@
 
 .header-hero__subheading {
     font-size: 21px;
+    font-style: italic;
     line-height: 1.4;
     max-width: 226px;
 }
