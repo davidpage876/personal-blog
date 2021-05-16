@@ -384,6 +384,7 @@ hr {
 
 .search-box__input {
     width: 80%;
+    max-width: 250px;
     height: 27px;
 }
 
