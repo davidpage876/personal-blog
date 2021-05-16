@@ -279,6 +279,10 @@ hr {
  * Menus
  */
  
+.menu-item {
+    padding: 0;
+}
+
 .menu-item a {
     display: block;
 }
@@ -320,6 +324,7 @@ hr {
     height: 37px;
     border-radius: 50%;
     background: var(--accent-dark-color);
+    padding: 0;
 }
 
 .social-links--fb {

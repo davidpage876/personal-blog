@@ -114,6 +114,7 @@
 
 .nav-list-item {
     margin-bottom: 13px;
+    padding: 0;
 }
 
 .nav-list-item a {
@@ -168,6 +169,10 @@
     margin: 0;
     padding: 20px;
     list-style: none;
+}
+
+.footer-info li {
+    padding: 0;
 }
 
 .footer-info li, 

@@ -103,7 +103,7 @@
     .header-menu.toggled {
         background-color: var(--accent-dark-color);
         position: absolute;
-        top: 41px;
+        top: 39px;
         left: 0;
         right: 0;
         list-style: none;
