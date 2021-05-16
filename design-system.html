@@ -19,10 +19,10 @@
                 <a href="design-system.html" class="nav-bar__site-info">
                     <p class="site-title">Design System</p>
                 </a>
-                <button id="mobile-nav-btn" class="mobile-nav-btn menu-toggle btn btn--icon">
+                <button id="mobile-nav-btn-1" class="mobile-nav-btn menu-toggle btn btn--icon">
                     <span class="menu-toggle__icon material-icons">menu</span>
                 </button>
-                <ul id="nav-menu" class="header-menu menu">
+                <ul id="nav-menu-1" class="header-menu menu">
                     <li class="menu-item"><a href="index.html" class="menu-item__link">Personal Blog</a></li>
                 </ul>
             </div>
@@ -47,10 +47,10 @@
                         <img class="site-logo nav-bar__logo" src="img/site-logo.png" alt="logo">
                         <p class="site-title">Design System</p>
                     </a>
-                    <button id="mobile-nav-btn" class="mobile-nav-btn menu-toggle btn btn--icon">
+                    <button id="mobile-nav-btn-2" class="mobile-nav-btn menu-toggle btn btn--icon">
                         <span class="menu-toggle__icon material-icons">menu</span>
                     </button>
-                    <ul id="nav-menu" class="header-menu menu">
+                    <ul id="nav-menu-2" class="header-menu menu">
                         <li class="menu-item menu-item--current"><a href="index.html" class="menu-item__link">Option
                                 A</a>
                         </li>
@@ -394,12 +394,19 @@
     </footer>
     <script>
 
-        /* Makes the mobile nav menu button work */
-        var btn = document.getElementById("mobile-nav-btn");
+        /* Makes the mobile nav menus button work */
+        var btn1 = document.getElementById("mobile-nav-btn-1");
+        var btn2 = document.getElementById("mobile-nav-btn-2");
 
-        btn.addEventListener("touchstart", function (event) {
+        btn1.addEventListener("touchstart", function (event) {
             event.preventDefault();
-            var menu = document.getElementById("nav-menu");
+            var menu = document.getElementById("nav-menu-1");
+            menu.classList.toggle("toggled");
+        });
+
+        btn2.addEventListener("touchstart", function (event) {
+            event.preventDefault();
+            var menu = document.getElementById("nav-menu-2");
             menu.classList.toggle("toggled");
         });
 
