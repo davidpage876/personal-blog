@@ -65,7 +65,8 @@ div,
 input,
 button,
 li,
-figcaption {
+figcaption,
+q {
     font: 16px/2 "comfortaa";
     color: var(--text-color);
 }
@@ -75,7 +76,8 @@ figcaption {
 .post-content div,
 .post-content input,
 .post-content button,
-.post-content li {
+.post-content li,
+.post-content q {
     font-size: 18px;
 }
 
