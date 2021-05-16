@@ -64,7 +64,8 @@ a,
 div, 
 input, 
 button,
-li {
+li,
+figcaption {
     font: 16px/2 "comfortaa";
     color: var(--text-color);
 }
@@ -99,7 +100,8 @@ h2 {
     div, 
     input, 
     button,
-    li {
+    li,
+    figcaption {
         font-size: 14px;
     }
 
@@ -262,6 +264,19 @@ hr {
     width: 30%;
     min-width: 130px;
     max-width: 260px;
+}
+
+/* ----------------------------------------------------------- 
+ * Figures
+ */
+
+figure {
+    margin: 28px 0;
+    text-align: center;
+}
+
+figcaption {
+    color: var(--light-text-color);
 }
 
 /* ----------------------------------------------------------- 
