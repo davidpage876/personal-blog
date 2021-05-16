@@ -94,8 +94,8 @@
 }
 
 .footer-section .author-bio__avatar {
-    max-width: 217px;    
-    max-height: 217px;
+    max-width: 205px;
+    max-height: 205px;
 }
 
 .footer-section .author-bio__company a {
@@ -133,7 +133,8 @@
 
     .footer-section__author-bio {
         flex-direction: row;
-        justify-content: left;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .footer-section .author-bio__content {
