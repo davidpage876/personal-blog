@@ -65,7 +65,9 @@
     .nav-bar {
         grid-template-columns: auto 1fr;
         padding: 0 24px;
+    }
 
+    .nav-bar--sticky {
         /* Sticky header, not used on mobile */
         position: fixed;
         left: 0;
