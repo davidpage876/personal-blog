@@ -20,7 +20,7 @@
             <p>
                 This page demonstrates the general components and style of our design system.
             </p>
-            
+
             <h2>Header Menu</h2>
             <p>
                 The header bar below also works in mobile, and can be made sticky by adding the
@@ -36,7 +36,8 @@
                         <span class="menu-toggle__icon material-icons">menu</span>
                     </button>
                     <ul id="nav-menu" class="header-menu menu">
-                        <li class="menu-item menu-item--current"><a href="index.html" class="menu-item__link">Option A</a>
+                        <li class="menu-item menu-item--current"><a href="index.html" class="menu-item__link">Option
+                                A</a>
                         </li>
                         <li class="menu-item"><a href="#" class="menu-item__link">Option B</a></li>
                         <li class="menu-item"><a href="#" class="menu-item__link">Option C</a></li>
@@ -55,7 +56,42 @@
                     </ul>
                 </div>
             </div>
-                        
+
+            <h2>Header hero</h2>
+            <p>
+                To use a parallax scrolling effect add "parallax" to "header-hero__img" (enabled below).
+                This effect is disabled on mobile for performance reasons.
+            </p>
+            <p>
+                To shift the image up somewhat so that it appears centred use "parallax--push-up".
+            </p>
+            <div class="header-hero">
+                <div class="header-hero__img img--study-tips-1 parallax use-placeholder">
+                    <div class="header-hero__content">
+                        <h1 class="header-hero__heading">Heading</h1>
+                        <p class="header-hero__subheading">Subheading</p>
+                        <a href="../index.html" class="header-hero__post-category">post category</a>
+                        <ul class="header-hero__social social-links">
+                            <li class="social-links__icon social-links--fb">
+                                <a href="#" title="facebook">
+                                    <img class="social-links__img" src="img/social-fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-links__icon social-links--twitter">
+                                <a href="#" title="twitter">
+                                    <img class="social-links__img" src="img/social-twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-links__icon social-links--linkdin">
+                                <a href="#" title="linkedin">
+                                    <img class="social-links__img" src="img/social-linkedin.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <!-- Anchor -->
             <a class="anchor" name="example-anchor"></a>
             <h2>General Text <a href="#example-anchor">#</a></h2>
@@ -91,11 +127,11 @@
                     dolore magna aliqua</li>
             </ol>
 
-            <h2>Post Cards</h2>   
+            <h2>Post Cards</h2>
             <p>
                 Post cards can be arranged in a grid or flex layout as required.
             </p>
-            <p>                
+            <p>
                 Use "post-card-grid" for grid layout, "post-card-flex" for flex layout.
                 Use "post--featured" on the first "post" to make it span 2 rows in the grid layout (large screens only).
             </p>
@@ -179,7 +215,38 @@
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
+                
+                <aside class="filters btn-group">
+                    <a href="#" class="btn toggle-btn">Keyword1</a>
+                    <a href="#" class="btn toggle-btn">Keyword2</a>
+                </aside>
+                <aside class="share">
+                    <hr class="share__hr">
+                    <h2 class="share__title">Share this post</h2>
+                    <ul class="social-links">
+                        <li class="social-links__icon social-links--fb">
+                            <a href="#" title="facebook">
+                                <img class="social-links__img" src="img/social-fb.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-links__icon social-links--twitter">
+                            <a href="#" title="twitter">
+                                <img class="social-links__img" src="img/social-twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-links__icon social-links--linkdin">
+                            <a href="#" title="linkedin">
+                                <img class="social-links__img" src="img/social-linkedin.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
             </div>
+            <nav class="post-nav">
+                <a href="#">Previous: Post</a>
+                <div class="sep">|</div>
+                <a href="#">Next: Post</a>
+            </nav>
 
             <h2>Search</h2>
             <form class="search-box">
@@ -224,7 +291,7 @@
                         <p class="footer-section__text author-bio__desc">Author bio description.</p>
                     </div>
                 </section>
-    
+
                 <section class="footer-section footer-section__categories">
                     <h2 class="footer-section__title">Categories</h2>
                     <ul class="nav-list">
@@ -239,7 +306,7 @@
                         </li>
                     </ul>
                 </section>
-    
+
                 <section class="footer-section footer-section__archive">
                     <h2 class="footer-section__title">Archive</h2>
                     <ul class="nav-list">
@@ -254,7 +321,7 @@
                         </li>
                     </ul>
                 </section>
-    
+
                 <section class="footer-section footer-section__search">
                     <h2 class="footer-section__title screen-reader-only">Search</h2>
                     <form class="search-box">
@@ -264,7 +331,7 @@
                         </button>
                     </form>
                 </section>
-    
+
                 <section class="footer-section footer-section__social">
                     <h2 class="footer-section__title">Follow</h2>
                     <ul class="footer-section__social social-links">
@@ -285,12 +352,10 @@
                         </li>
                     </ul>
                 </section>
-    
             </div>
-
         </main>
     </div>
-    <footer class="site-footer">        
+    <footer class="site-footer">
         <div class="footer-bar">
             <ul class="footer-info">
                 <li class="footer-info--copyright">
