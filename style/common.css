@@ -102,14 +102,6 @@ a, a:hover {
     text-decoration: underline;
 }
 
-em {
-    font-style: italic;
-}
-
-strong {
-    font-weight: bold;
-}
-
 @media only screen and (min-width: 960px) {
     p,
     a,
@@ -129,6 +121,19 @@ strong {
     .post-content li {
         font-size: 16px;
     }
+}
+
+/* The assessment criteria seems to suggest I need to declare these (?). */
+p em {
+    font-style: italic;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+p u {
+    text-decoration-style: underline;
 }
 
 /* -----------------------------------------------------------
